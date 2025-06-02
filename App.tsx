@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-
+  },
   smallText: {
     fontSize: 12,
     color: 'gray',
