@@ -63,10 +63,9 @@ export default function App() {
       </View>
     </View>
 
-  );
+ );
 }
-
-const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
   // Main container
   container: {
     paddingTop: 1,
@@ -74,7 +73,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     flex: 1,
   },
-
   // Top Header
   topHeader: {
     flexDirection: 'row',
