@@ -24,6 +24,34 @@ export default function App() {
       </View>
       <View style={styles.lineDivider} />
 
+       {/* User Info */}
+      <View style={styles.userRow}>
+        <Image
+          source={{ uri: 'https://t4.ftcdn.net/jpg/02/79/66/93/360_F_279669366_Lk12QalYQKMczLEa4ySjhaLtx1M2u7e6.jpg' }}
+          style={styles.avatar}
+        />
+        <View>
+          <Text style={styles.postLargeText}>posts_everyday</Text>
+          <Text style={styles.postSmallText}>via frenchie_fry39</Text>
+        </View>
+        <SimpleLineIcons name="options" size={20} color="black" style={styles.postDots} />
+      </View>
+
+      {/* Post Image */}
+      <Image source={{ uri: 'https://i.pinimg.com/736x/8a/7c/5c/8a7c5cbb4fd8d234e09b773ae9d75152.jpg', }} style={styles.postImage} />
+
+      {/* Like/comment icons row */}
+      <View style={styles.reactionRow}>
+        <View style={styles.leftReactionIcons}>
+          <FontAwesome name="heart-o" size={24} color="black" style={styles.icon} />
+          <FontAwesome name="comment-o" size={24} color="black" style={styles.icon} />
+          <FontAwesome name="paper-plane" size={24} color="black" style={styles.icon} />
+        </View>
+        <FontAwesome name="bookmark-o" size={24} color="black" />
+      </View>
+
+
+
       {/* Bottom Navigation Bar */}
       <View style={styles.lineDividerNavbar} />
       <View style={styles.navbar}>
@@ -89,6 +117,54 @@ const styles = StyleSheet.create({
     marginTop: 0,
     marginBottom: 10,
   },
+
+  // User Info Row
+  userRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  avatar: {
+    width: 38,
+    height: 40,
+    borderRadius: 25,
+    marginRight: 10,
+  },
+  postLargeText: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: 'black',
+  },
+  postSmallText: {
+    fontSize: 12,
+  },
+  postDots: {
+    marginTop: 2,
+    marginLeft: 180,
+  },
+
+  // Post Image
+  postImage: {
+    width: '100%',
+    height: 420,
+  },
+
+  // Reaction Row
+  reactionRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 10,
+    marginBottom: 3,
+  },
+  leftReactionIcons: {
+    flexDirection: 'row',
+  },
+  icon: {
+    marginRight: 18,
+  },
+
+
 
   // Bottom Navigation
   lineDividerNavbar: {
