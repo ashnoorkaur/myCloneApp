@@ -52,7 +52,7 @@ export default function App() {
 
 
 
-      {/* Bottom Navigation Bar */}
+   {/* Bottom Navigation Bar */}
       <View style={styles.lineDividerNavbar} />
       <View style={styles.navbar}>
         <FontAwesome name="home" size={27} color="black" />
@@ -87,11 +87,11 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 24,
   },
-
   headerCenter: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+
   },
 
   smallText: {
