@@ -125,6 +125,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  smallText: {
+    fontSize: 12,
+    color: 'gray',
+  },
+  largeText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  buttonWrapper: {
+    marginTop: 2,
+    marginRight: 0,
+  },
 
   // Divider
   lineDivider: {
